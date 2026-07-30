@@ -21,17 +21,17 @@ The LLM can then call tools dynamically during responses.
 
 ## Steps to set up your own LLM with Custom MCP Server -
 
-1.) Install dependencies
+**1.) Install dependencies**
 
 pip install mcp-client-for-ollama
 
 pip install mcp openpyxl pandas xlwings
 
-2.) Install Model
+**2.) Install Model**
 
 ollama pull qwen2.5:7b
 
-3.) Run MCP client
+**3.) Run MCP client**
 
 python -m mcp_client_for_ollama --servers-json "your path\servers.json"
 
