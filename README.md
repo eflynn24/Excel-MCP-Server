@@ -1,41 +1,8 @@
 ## MCP Server + Local LLM (Ollama)
 
-Run a local LLM with custom MCP servers to enable tool usage (files, APIs, automation) directly from your model.
+Give local LLMs the ability to work with Excel workbooks
+through Model Context Protocol (MCP).
 
-This setup connects:
-- A local LLM (Ollama)
-- A custom MCP server
+[Python] [MCP] [Ollama] [Pandas] [OpenPyXL]
 
-So your model can:
-- Access external tools
-- Read/write files
-- Run custom automation workflows
-
-MCP Server → exposes tools (functions)
-
-MCP Client → connects those tools to the LLM
-
-Ollama → runs the local model
-
-The LLM can then call tools dynamically during responses.
-
-## Steps to set up your own LLM with Custom MCP Server -
-
-**1.) Install dependencies**
-
-pip install mcp-client-for-ollama
-
-pip install mcp openpyxl pandas xlwings
-
-**2.) Install Model**
-
-ollama pull qwen2.5:7b
-
-**3.) Run MCP client**
-
-python -m mcp_client_for_ollama --servers-json "your path\servers.json"
-
-## Example Use Cases -
-- Query Excel
-- Generate reports
-- Automate workflows
+<img width="1368" height="792" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/35ff84d6-5aa2-49e0-b79f-dd706bd912d5" />
